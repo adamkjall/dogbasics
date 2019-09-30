@@ -1,0 +1,119 @@
+* {
+  box-sizing: border;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b6122;
+  color: azure;
+  padding: 0 1rem;
+}
+
+.brand {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  width: 15rem;
+}
+
+.menu {
+  display: none;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2rem;
+  padding-inline-start: 0;
+}
+
+.menu li {
+  padding: 1.4rem 1rem;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
+  word-wrap: none;
+}
+.menu li:hover {
+  border-bottom: 4px solid white;
+  cursor: pointer;
+}
+
+.menu li:first-child {
+  background-color: #347429;
+}
+
+.search {
+  display: none;
+  justify-content: flex-end;
+}
+
+.search img {
+  color: white;
+  width: 1.5rem;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.page {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page img {
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2b6122;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.contact-info {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info 
+h2,
+p {
+  margin-bottom: 1rem;
+}
+
+.contact-info .email {
+  color: #77AAE9;
+}
+
+@media only screen and (min-width: 1150px) {
+  .menu {
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
