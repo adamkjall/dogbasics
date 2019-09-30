@@ -1,11 +1,19 @@
 * {
-  box-sizing: border;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
 }
 
 /* HEADER */
@@ -28,7 +36,7 @@ header {
   width: 15rem;
 }
 
-.menu {
+.navbar {
   display: none;
   justify-content: center;
   list-style: none;
@@ -36,17 +44,20 @@ header {
   padding-inline-start: 0;
 }
 
-.menu li {
+.navbar li {
   padding: 1.4rem 1rem;
   border-bottom: 4px solid rgba(255, 255, 255, 0);
-  word-wrap: none;
+  
+  transition: background-color .5s ease;
+  transition: border-bottom .5s ease;
 }
-.menu li:hover {
+.navbar li:hover {
   border-bottom: 4px solid white;
   cursor: pointer;
+  background-color: #347429;
 }
 
-.menu li:first-child {
+.navbar li:first-child {
   background-color: #347429;
 }
 
@@ -78,13 +89,17 @@ main {
   width: 100%;
 }
 
+.wave {
+  margin-bottom: -1rem; /* Fråga varför detta behövs */
+}
+
 /* FOOTER */
 footer {
   background-color: #2b6122;
   color: white;
   display: flex;
   justify-content: center;
-  padding: 5rem 0;
+  padding-bottom: 5rem;
 }
 
 .contact-info {
@@ -105,7 +120,7 @@ p {
 }
 
 @media only screen and (min-width: 1150px) {
-  .menu {
+  .navbar {
     display: flex;
   }
 
@@ -117,3 +132,27 @@ p {
     display: none;
   }
 }
+
+/* ANIMATIONS */
+.underline-effect {
+  position: relative;
+}
+
+.underline-effect::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.underline-effect:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
