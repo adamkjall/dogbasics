@@ -6,6 +6,23 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(235, 235, 235);
+}
+
+.button {
+  margin-top: 1rem;
+  padding: .8rem 2rem;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  background: #FC6E51;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color .6s ease;
+  border: none;
+  outline: none;
+}
+.button:hover {
+  background: rgb(189, 74, 51);
 }
 
 a {
@@ -14,6 +31,16 @@ a {
 }
 a:hover {
   color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 /* HEADER */
@@ -47,9 +74,9 @@ header {
 .navbar li {
   padding: 1.4rem 1rem;
   border-bottom: 4px solid rgba(255, 255, 255, 0);
-  
-  transition: background-color .5s ease;
-  transition: border-bottom .5s ease;
+
+  transition: background-color 0.5s ease;
+  transition: border-bottom 0.5s ease;
 }
 .navbar li:hover {
   border-bottom: 4px solid white;
@@ -79,7 +106,7 @@ main {
 }
 
 .page {
-  max-width: 900px;
+  max-width: 960px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,6 +114,50 @@ main {
 
 .page img {
   width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "box1"
+  "box2"
+  "box3";
+  color: azure;
+}
+
+.box {
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  background-position: center;
+  height: 14rem;
+}
+.box1 {
+  grid-area: box1;
+  background-image: url("../img/dog-clicker-training.jpg");
+  padding: 0 4rem;
+}
+.box1 p {
+  margin-top: 1rem;
+}
+.box2 {
+  grid-area: box2;
+  background-image: url("../img/dog-bed.jpg") ;
+
+}
+.box3 {
+  grid-area: box3;
+  background-image: url("../img/advice.jpg");
+ 
+}
+
+.article-section {
+  margin: 0 2rem;
+}
+.article {
+  margin-top: 5rem;
+}
+.article p {
+  margin-top: 1rem;
 }
 
 .wave {
@@ -109,14 +180,13 @@ footer {
   justify-content: center;
 }
 
-.contact-info 
-h2,
+.contact-info h2,
 p {
   margin-bottom: 1rem;
 }
 
 .contact-info .email {
-  color: #77AAE9;
+  color: #77aae9;
 }
 
 @media only screen and (min-width: 1150px) {
@@ -133,19 +203,38 @@ p {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .grid-container {
+   
+  }
+}
+@media only screen and (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box2"
+      "box1 box3";
+  }
+
+  .box1 {
+    background-size: 140%;
+    height: 28rem;
+  }
+}
+
 /* ANIMATIONS */
 .underline-effect {
   position: relative;
 }
 
 .underline-effect::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #3cefff;
+  background-color: #000000;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -155,4 +244,5 @@ p {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
+
 
