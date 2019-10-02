@@ -4,63 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>DogBasics</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/drawer-menu-styles.css" />
   </head>
   <body>
     <header>
       <div class="brand">
         <img src="img/logo/DogBasics-logo/cover.png" alt="" />
       </div>
+
       <nav>
-        <ul class="menu">
+        <ul class="navbar">
           <li>Home</li>
           <li>Dog Training ▾</li>
           <li>Advice ▾</li>
           <li>Dog Sitting Services ▾</li>
           <li><a href="review.html">Testimonials</a></li>
-          <li>Contact</li>
-          <li>More Links</li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="search">
-        <img src="img/search.png" alt="search" />
-      </div>
+
+  <!--
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li class="underline-effect">Home</li></a>
+            <a href="#"><li class="underline-effect">Dog Training ▾</li></a>
+            <a href="#"><li class="underline-effect">Advice ▾</li></a>
+            <a href="#"
+              ><li class="underline-effect">Dog Sitting Services ▾</li></a
+            >
+            <a href="review.html"
+              ><li class="underline-effect">Testimonials</li></a
+            >
+            <a href="#contact"><li class="underline-effect">Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+    -->
+
       <div class="hamburger-menu">
         <img src="img/menu.png" alt="" />
+      </div>
+      <div class="search">
+        <img src="img/search.png" alt="search" />
       </div>
     </header>
 
     <main>
       <div class="page">
-        
         <img src="img/svart-hund.webp" alt="" />
-        <h1>Hej</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          consequatur aliquid asperiores velit obcaecati unde a omnis atque
-          itaque, optio ducimus inventore cumque veniam perferendis illo
-          delectus eos placeat nisi.
-        </p>
+
+        <div class="grid-container">
+          <div class="box box1 flex flex-col">
+            <h2>Dog Training</h2>
+            <p>
+                DogBasics is a dog training school in Ovington, Thetford, Norfolk, UK.
+                We offer Basic and Intermediate Obedience lessons.
+            </p>
+            <a class="button" href="#article-1">Learn more</a class="button">
+          </div>
+          <div class="box box2 flex flex-col">
+            <h2>Dog day care & boarding</h2>
+            <a class="button" href="#article-2">Learn more</a class="button">
+          </div>
+          <div class="box box3 flex flex-col">
+            <h2>Advice</h2>
+            <a class="button"  href="#article-3">Learn more</a class="button">
+          </div>
+        </div>
+
+        <section class="article-section">
+          <article id="article-1" class="article flex flex-col">
+            <h2>Dog Training</h2>
+            <p>
+              DogBasics offers Basic and Intermediate Obedience lessons. The
+              lessons include off lead socialising. The dogs are divided up in
+              groups according to size and confidence level. Hoping to help
+              improve your relationship with your dog, all our training covers
+              dog language and by giving you the tools you can use to
+              successfully train your dog (praise, treats, toys, body language,
+              games, etc).
+            </p>
+            <a class="button" class="btn-primary">Read more</a class="button">
+          </article>
+
+          <article id="article-2" class="article flex flex-col">
+            <h2>Dog day care & boarding</h2>
+            <p>
+              So sorry, I'm not taking on any new dogs at the moment. Day care
+              dogs and boarding dogs at DogBasics have full days of fun. While
+              you are at work, let your furry friend have a day of exciting
+              activities, rewarding you with a tired, content pup at the end of
+              the day. If you are going on holiday, we can offer a home away
+              from home for your dog. No kennels! The dogs stay in the house
+              with us as part of our family and are never left unsupervised, not
+              even at night.
+            </p>
+            <a class="button" class="btn-primary">Read more</a class="button">
+          </article>
+
+          <article id="article-3" class="article flex flex-col">
+            <h2>Advice</h2>
+            <p>
+              Having a dog can throw up all sorts of problems and hopefully
+              you'll find some help amongst the DogBasics Article archive. The
+              articles cover things like puppy nipping, noise phobias, food
+              aggression, the relationship between food and behaviour, dog
+              language, problem solving exercises to entertain your dog and
+              basic training exercises. .
+            </p>
+            <a class="button" class="btn-primary">Read more</a class="button">
+          </article>
+        </section>
       </div>
     </main>
 
-    <footer>
-      <div class="contact-info">
+    <!-- Wave image that transitions to the footer -->
+    <img class="wave" src="img/wave.svg" alt=""">
+
+    <footer class="flex flex-col">
+      <div id="contact" class="contact-info">
         <h2>Contact</h2>
         <p>
           To find out more about our training and/or dog sitting services,
-          please email me and leave some basic details about
-          your self (your name, email address, phone/mobile number, address) and
-          your dog (name, breed, age).
+          please email me and leave some basic details about your self (your
+          name, email address, phone/mobile number, address) and your dog (name,
+          breed, age).
         </p>
         <p>We look forward to hearing from you!</p>
         <p>Caroline Kjall Jackson</p>
-        <p>Email: <span class="email">info@dogbasics.co.uk</span></p>
+        <p>
+          Email:
+          <span class="email underline-effect">info@dogbasics.co.uk</span>
+        </p>
         <p>Adress: Ovington, Norfolk, IP25</p>
       </div>
       <iframe
