@@ -43,6 +43,7 @@ a:hover {
   flex-direction: column;
 }
 
+
 /* HEADER */
 header {
   display: flex;
@@ -127,7 +128,7 @@ main {
 
 .box {
   background-repeat: no-repeat;
-  background-size: 100%, cover;
+  background-size: cover;
   background-position: center;
   height: 14rem;
 }
@@ -135,6 +136,11 @@ main {
   grid-area: box1;
   background-image: url("../img/dog-clicker-training.jpg");
   padding: 0 4rem;
+  text-align: center;
+}
+.box > h2, p {
+  background: rgba(0,0,0,0);
+  padding: .2rem;
 }
 .box1 p {
   margin-top: 1rem;
@@ -168,8 +174,6 @@ main {
 footer {
   background-color: #2b6122;
   color: white;
-  display: flex;
-  justify-content: center;
   padding-bottom: 5rem;
 }
 
@@ -189,6 +193,11 @@ p {
   color: #77aae9;
 }
 
+.googlemaps {
+  margin-top: 2rem;
+}
+
+/* LARGE SCREEN */
 @media only screen and (min-width: 1150px) {
   .navbar {
     display: flex;
@@ -203,11 +212,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .grid-container {
-   
-  }
-}
+/* MEDIUM SCREEN */
 @media only screen and (min-width: 900px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -217,9 +222,18 @@ p {
   }
 
   .box1 {
-    background-size: 140%;
+    background-size: 155%;
     height: 28rem;
   }
+
+  footer {
+    flex-direction: row !important;
+  }
+
+  .contact-info {
+    margin-right: 2rem;
+  }
+
 }
 
 /* ANIMATIONS */

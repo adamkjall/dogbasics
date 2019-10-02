@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>DogBasics</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/review-styles.css" />
     <link rel="stylesheet" href="css/drawer-menu-styles.css" />
   </head>
   <body>
@@ -17,6 +19,7 @@
       <div class="brand">
         <img src="img/logo/DogBasics-logo/cover.png" alt="" />
       </div>
+
       <nav>
         <ul class="navbar">
           <li>Home</li>
@@ -27,65 +30,46 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="search">
-        <img src="img/search.png" alt="search" />
-      </div>
-      <!--    Made by Erik Terwan    -->
-      <!--   24th of November 2015   -->
-      <!--        MIT License        -->
-      <nav role="navigation">
-        <div id="menuToggle">
-          <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
+
+      <!--
           <input type="checkbox" />
 
-          <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
           <span></span>
           <span></span>
           <span></span>
 
-          <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
           <ul id="menu">
-            <a href="index.html"><li>Home</li></a>
-            <a href="#"><li>Dog Training ▾</li></a>
-            <a href="#"><li>Advice ▾</li></a>
-            <a href="#"><li>Dog Sitting Services ▾</li></a>
-            <a href="review.html"><li>Testimonials</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <a href="index.html"><li class="underline-effect">Home</li></a>
+            <a href="#"><li class="underline-effect">Dog Training ▾</li></a>
+            <a href="#"><li class="underline-effect">Advice ▾</li></a>
+            <a href="#"
+              ><li class="underline-effect">Dog Sitting Services ▾</li></a
+            >
+            <a href="review.html"
+              ><li class="underline-effect">Testimonials</li></a
+            >
+            <a href="#contact"><li class="underline-effect">Contact</li></a>
           </ul>
         </div>
       </nav>
+    -->
 
-      <!--<div class="hamburger-menu">
+      <div class="hamburger-menu">
         <img src="img/menu.png" alt="" />
-      </div>-->
+      </div>
+      <div class="search">
+        <img src="img/search.png" alt="search" />
+      </div>
     </header>
 
     <main>
-      <div class="page">
-        <img src="img/svart-hund.webp" alt="" />
-        <h1>Hej</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          consequatur aliquid asperiores velit obcaecati unde a omnis atque
-          itaque, optio ducimus inventore cumque veniam perferendis illo
-          delectus eos placeat nisi.
-        </p>
-      </div>
+      <div class="page"></div>
     </main>
 
+    <!-- Wave image that transitions to the footer -->
     <img class="wave" src="img/wave.svg" alt=""">
-    <footer>
+
+    <footer class="flex flex-col">
       <div id="contact" class="contact-info">
         <h2>Contact</h2>
         <p>
