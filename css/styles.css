@@ -6,20 +6,22 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: rgb(235, 235, 235);
+  /* background-color: rgb(235, 235, 235); */
 }
 
 .button {
   margin-top: 1rem;
-  padding: .8rem 2rem;
-  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
-  background: #FC6E51;
-  color: white;
+  padding: 0.6rem 1.7rem;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  /* background: #fc6e51; */
+  background-color: #184810;
+  color: azure;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-color .6s ease;
+  transition: background-color 0.6s ease;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .button:hover {
   background: rgb(189, 74, 51);
@@ -27,10 +29,10 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: azure;
 }
 a:hover {
-  color: white;
+  color: azure;
 }
 
 .flex {
@@ -43,12 +45,11 @@ a:hover {
   flex-direction: column;
 }
 
-
 /* HEADER */
-header {
+.navbar-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: #2b6122;
   color: azure;
   padding: 0 1rem;
@@ -80,7 +81,7 @@ header {
   transition: border-bottom 0.5s ease;
 }
 .navbar li:hover {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid azure;
   cursor: pointer;
   background-color: #347429;
 }
@@ -95,22 +96,59 @@ header {
 }
 
 .search img {
-  color: white;
+  color: azure;
   width: 1.5rem;
 }
 
 /* MAIN */
 main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "page"
+    "sidebar";
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-.page {
-  max-width: 960px;
+.sidebar {
+  grid-area: sidebar;
+  margin-top: 5rem;
+  max-width: 30rem;
+  display: grid;
+  grid-auto-columns: auto minmax(10rem, 1fr);
+  grid-template-areas: "book-recommendation social";
+}
+.sidebar h4 {
+  margin: 1rem 0;
+}
+
+.sidebar .book-recommendation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  grid-area: book-recommendation;
+}
+
+.sidebar .book-recommendation img {
+  width: 15rem;
+}
+.sidebar .social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-area: social;
+}
+.sidebar .social img {
+  display: block;
+  width: 4rem;
+  cursor: pointer;
+}
+.page {
+  grid-area: page;
+  max-width: 960px;
 }
 
 .page img {
@@ -120,12 +158,15 @@ main {
 .grid-container {
   display: grid;
   grid-template-areas:
-  "box1"
-  "box2"
-  "box3";
+    "box1"
+    "box2"
+    "box3";
   color: azure;
 }
 
+.content {
+  border-right: 1px solid rgb(168, 168, 168);
+}
 .box {
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,22 +179,21 @@ main {
   padding: 0 4rem;
   text-align: center;
 }
-.box > h2, p {
-  background: rgba(0,0,0,0);
-  padding: .2rem;
+.box > h2,
+p {
+  background: rgba(0, 0, 0, 0);
+  padding: 0.2rem;
 }
 .box1 p {
   margin-top: 1rem;
 }
 .box2 {
   grid-area: box2;
-  background-image: url("../img/dog-bed.jpg") ;
-
+  background-image: url("../img/dog-bed.jpg");
 }
 .box3 {
   grid-area: box3;
   background-image: url("../img/advice.jpg");
- 
 }
 
 .article-section {
@@ -173,7 +213,7 @@ main {
 /* FOOTER */
 footer {
   background-color: #2b6122;
-  color: white;
+  color: azure;
   padding-bottom: 5rem;
 }
 
@@ -214,6 +254,11 @@ p {
 
 /* MEDIUM SCREEN */
 @media only screen and (min-width: 900px) {
+  main {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-template-areas: "page sidebar";
+  }
   .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -221,9 +266,31 @@ p {
       "box1 box3";
   }
 
+  .content {
+    padding-right: 2rem;
+  }
   .box1 {
-    background-size: 155%;
+    background-size: 180%;
     height: 28rem;
+  }
+
+  .sidebar {
+    grid-template-areas: "book-recommendation" "social";
+    justify-items: center;
+    align-items: start;
+    max-width: 20rem;
+    padding: 0 2rem;
+
+    margin-top: 1rem;
+  }
+
+  .sidebar .book-recommendation {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .sidebar .social {
+    align-items: center;
   }
 
   footer {
@@ -233,7 +300,6 @@ p {
   .contact-info {
     margin-right: 2rem;
   }
-
 }
 
 /* ANIMATIONS */
@@ -248,7 +314,7 @@ p {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: #77aae9;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -258,5 +324,3 @@ p {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
-
-
