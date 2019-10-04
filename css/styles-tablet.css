@@ -1,15 +1,21 @@
-
 /* MEDIUM SCREEN */
 @media only screen and (min-width: 768px) {
-  main {
-    /* grid-template-columns: 4fr 1fr; */
-    grid-template-areas: "page" "sidebar";
-    justify-items: end;
-  }
 
+  /* HEADER */
   .navbar-container {
-    grid-template-areas: "brand navbar search"
+    grid-template-areas: "brand navbar search";
   }
+  
+  .brand img {
+    width: 13rem;
+  }
+  
+  /* MAIN */
+  main {
+    grid-template-areas: "page" "sidebar";
+  }
+  
+  
 
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -27,23 +33,18 @@
     height: 14rem;
   }
   .box1 {
-    height: 28rem;
+    height: 20rem;
   }
 
   .article p {
-    text-align: center;
     padding: 0 2rem;
   }
 
   .sidebar {
-    grid-template-areas:
-      "book-recommendation"
-      "social";
-    grid-template-columns: 1fr;
-    grid-template-rows: 25rem auto;
-    justify-self: start;
+    grid-template-areas: "book-recommendation social";
+    grid-gap: 5rem;
     padding: 0 2rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 
   .sidebar .book-recommendation {
@@ -52,20 +53,16 @@
     width: 10rem;
   }
 
-  .sidebar .social {
-    align-items: center;
-    padding: 0;
-  }
-
-  .sidebar .social img ~ img {
-    margin-top: 1rem;
-  }
-
   footer {
-    flex-direction: row !important; /* Fråga!! */ 
+    flex-direction: row !important;
   }
 
   .contact-info {
     margin-right: 4rem;
+  }
+
+  .googlemaps {
+    width: 22rem;
+    height: 16rem
   }
 }

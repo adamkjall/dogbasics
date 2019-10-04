@@ -58,16 +58,21 @@ a:hover {
 }
 
 /* HEADER */
+header {
+  display: grid;
+  justify-items: center;
+  background-color: #2b6122;
+}
+
 .navbar-container {
-  width: 100%;
+  max-width: 100rem;
 
   display: grid;
-  grid-template-columns: auto 10fr 1fr;
+  grid-template-columns: 1fr 10fr 1fr;
   grid-template-areas: "brand navbar menuToggle";
   align-items: center;
   justify-items: center;
 
-  background-color: #2b6122;
   color: azure;
   padding: 0 .5rem;
 }
@@ -232,11 +237,9 @@ main {
   grid-area: sidebar;
 
   display: grid;
-  grid-auto-columns: 1fr;
   grid-template-areas: "book-recommendation" "social";
   justify-items: center;
 
-  /* width: 100%; */
   margin-top: 5rem;
   padding: 0 2rem;
 }
@@ -266,13 +269,8 @@ main {
   margin-top: 1rem;
 }
 
-.sidebar .social img {
-  display: block;
-  width: 3rem;
+.social-icons {
   cursor: pointer;
-}
-.sidebar .social img:first-of-type {
-  width: 3.7rem;
 }
 
 /* Border that separates the main content and the sidebar */
@@ -352,20 +350,21 @@ main {
 
 .article h2 {
   font-size: 1.9rem;
+  text-align: center;
 }
 
 .article p {
   margin-top: 1rem;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 /* Testimonial cards */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 3rem;
-
-  margin: 5rem 2rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 2rem 0 2rem;
 }
 
 .card {
@@ -373,11 +372,14 @@ main {
   flex-direction: column;
   align-items: center;
 
+  max-width: 15rem;
+
   text-align: center;
 
   background: rgb(247, 247, 245);
   line-height: 1.3rem;
   padding: 20px 30px 20px 30px;
+  margin: 3rem 1rem 0 1rem;
   border-radius: 8px;
   box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.3);
 
@@ -411,7 +413,8 @@ main {
 /* Wave image above the footer */
 .wave {
   margin-bottom: -1rem;
-  width: 100%;
+  background-size: cover; 
+  min-width: 60rem;
 }
 .wave img {
   width: 100%;
@@ -441,6 +444,7 @@ footer {
 .contact-info h2,
 p {
   margin-bottom: 1rem;
+  line-height: 1.2rem;
 }
 
 .contact-info .email {
