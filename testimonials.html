@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DogBasics</title>
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  STYLES -->
+    <link rel="stylesheet" href="css/drawer-menu-styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles-tablet.css" />
+    <link rel="stylesheet" href="css/styles-desktop.css" />
+    <link rel="stylesheet" href="css/testimonials-styles.css" />
+
+    <!--  ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <div class="brand">
+          <img src="img/logo/DogBasics-logo/cover.png" alt="" />
+        </div>
+
+        <nav>
+          <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <span>Dog Training ▾</span>
+              <ul class="dropdown-menu">
+                <li class="underline-effect">
+                  <a href="#">Training at DogBasics</a>
+                </li>
+                <li class="underline-effect"><a href="#">For Puppies</a></li>
+                <li class="underline-effect">
+                  <a href="#">Basic Obedience</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Advanced Obedience</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Private Training</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Other Types of Training</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">First Aid Lesson</a>
+                </li>
+                <li class="underline-effect"><a href="#">Class Schedule</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <span>Advice ▾</span>
+              <ul class="dropdown-menu">
+                <li class="underline-effect">
+                  <a href="#">General Dog Advice</a>
+                </li>
+                <li class="underline-effect"><a href="#">For Puppies</a></li>
+                <li class="underline-effect">
+                  <a href="#">About Puppies</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Puppy Nipping</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Dog Food and Behaviour</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Food Guarding</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Dog Language</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Do We Need to Dominate our Dogs</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Seperation Anxiety</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Travel Sickness</a>
+                </li>
+                <li class="underline-effect"><a href="#">Noise Phobias</a></li>
+                <li class="underline-effect">
+                  <a href="#">Over Excited Dogs</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Dogs That Chase</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Basic Exercises</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <span>Dog Sitting Services ▾</span>
+              <ul class="dropdown-menu">
+                <li class="underline-effect">
+                  <a href="#">Home Boarding</a>
+                </li>
+                <li class="underline-effect"><a href="#">Dog Day Care</a></li>
+                <li class="underline-effect">
+                  <a href="#">Dog Sitting Fees</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li class="underline-effect">Home</li></a>
+              <a href="#"><li class="underline-effect">Dog Training ▾</li></a>
+              <a href="#"><li class="underline-effect">Advice ▾</li></a>
+              <a href="#"
+                ><li class="underline-effect">Dog Sitting Services ▾</li></a
+              >
+              <a href="testimonials.html"
+                ><li class="underline-effect">Testimonials</li></a
+              >
+              <a href="#contact"><li class="underline-effect">Contact</li></a>
+            </ul>
+          </div>
+        </nav>
+       
+  
+        <!-- <div class="hamburger-menu">
+          <img src="img/menu.png" alt="" />
+        </div> -->
+        <div class="search">
+          <img src="img/search.png" alt="search" />
+        </div>
+      </div>
+
+      <!-- Cover image gallery -->
+      <div class="img-slide"></div>
+    </header>
+
+    <main>
+      <div class="page">
+        <section class="content">
+          <div class="testimonials-info">
+            <h1>Testimonials</h1>
+            <p>
+              Below you will find testimonials from some of our clients. They
+              might have joined our puppy groups, dog training classes or they
+              might have left their dog in our day care or home boarding. You
+              can find more testimonials on the
+              <a class="underline-effect" href="">DogBasics Facebook</a> page
+              and on the <a class="underline-effect" href="">Google +</a> page.
+            </p>
+          </div>
+          <section class="cards">
+            <article class="card">
+              <img src="img/thumbnails/dog1.png" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “Caroline has to be the Angel of Dogs. With extensive knowledge,
+                and a historical background in everything doggie - including
+                training, first aid, understanding different breeds and their
+                personalities, she is an expert in her field. Only downside is,
+                my dog loves her so much, she wants to stay there..... Dorothy”
+                <strong
+                  >Millie Rottweiler from Suffolk, came for training lessons and
+                  dog boarding</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog2.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “Caroline performs magic on even the worse of behaved dogs. She
+                loves them all. My Ivy adores her, and can't wait to get out the
+                car whether it be for training, socialization or day care. We
+                are very sorry to be losing her from the area. She's more than
+                enriched Ivy's and ours life.”
+                <strong>Ivy Mixed Pitbull Labrador breed from Lilley</strong>
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog3.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “I took my Boxer pup to the social classes with Caroline, they
+                were very good and gave Mylo a good start to his doggie life,
+                would highly recommend. He certainly gave the larger pups a run
+                for their money.”
+                <strong
+                  >Mylo Boxer puppy from Luton, came for socialising
+                  sessions</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog4.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “I would really recommend Caroline and DogBasics. As a
+                completely new dog owner to a rescue Jack Russell she has been a
+                real help and people are always complementing me on our walks
+                about how well behaved my dog is. Poppy loves the agility and
+                going to see Caroline.”
+                <strong
+                  >Poppy Jack Russell from Luton, took a Basic Obedience course
+                  and agility</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog5.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “I have been going to DogBasics since Feb 2008 and not only does
+                Benji love it but so do I . Caroline is friendly approachable
+                and always willing to give advice or help, and put in that
+                little extra. I am just about to get a new puppy and wouldnt
+                dream of going anywhere else for his training, no doubt he will
+                also look forward to his sessions with Caroline as much as Benji
+                does. Thanks Caroline, Alison Milner”
+                <strong
+                  >Benji Border collie mix from Ware, Hertfordshire, took IC
+                  course & Agility</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog6.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “Carolines training is great fun, for both humans and dogs. I
+                have used Caroline's doggie day care and boarding for a number
+                of years and I'm struggling to find someone who's care matches
+                that of Caroline's. Thank you for everything, and good luck,
+                Caroline, with the new business you will be very successful!
+                Nina and, of course, Hamish who misses you very much!”
+                <strong
+                  >Hamish Labrador from Luton, Beds, came for Dog training, day
+                  care and boarding</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog7.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “My Husband and I would highly recommend Caroline. She
+                understands dogs very well and also loves them very much. She is
+                a natural at training, very skilled. She has strict standards
+                and only wants the best for the dogs. She is a highly skilled
+                lady who is happy to give advice if needed. I don't think you
+                will find anyone better at dog training. Will be very sad to
+                lose her from this area."
+                <strong>
+                  Molly Cockerpoo from Luton, Beds, came for Dog
+                  training</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog8.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “I have never known anyone love dogs as much as Caroline! Lottie
+                loves her just as much and is absolutely beside herself with joy
+                whenever we arrive at Caroline's. Her training sessions and tips
+                have been invaluable. If you want a well socialised dog under
+                training where you can meet other like-minded owners, I have no
+                hesitation in reommending DogBasics. Wendy Wolstencroft”
+                <strong
+                  >Lottie Border Collie from Lilley, Hertfordshire, took
+                  Introduction Course, agility, dog day care and dog
+                  boarding</strong
+                >
+              </p>
+            </article>
+            <article class="card">
+              <img src="img/thumbnails/dog9.jpg" alt="" />
+              <h4>January 2014</h4>
+              <p>
+                “Caroline consistently provides a home from home for my staffy,
+                Barley. She has constant fun, games, mental stimulation and the
+                chance to play with all her doggy friends. The love, care,
+                attention and fun Barley gets being with Caroline is absolutely
+                fantastic! Helen Freeman”
+
+                <strong>
+                  Barley blond Staffordshire bullterrier from Hitchin,
+                  Hertfordshire, took Puppy class and came for Dog Boarding and
+                  Day Care
+                </strong>
+              </p>
+            </article>
+          </section>
+          <form class="form" method="get">
+            <div class="form-wrapper">
+              <h2>Leave a testimonial!</h2>
+
+              <legend>Your Details:</legend>
+              <label>
+                Name:
+                <input
+                  class="margin-bottom-1"
+                  type="text"
+                  name="name"
+                  size=""
+                  style="width: 100%"
+                />
+              </label>
+
+              <p>
+                <label class="margin-bottom-1" for="hear about">
+                  What contact did you have with DogBasics?
+                  <select name="referrer" id="hear-about">
+                    <option value="dogtraining">Dog Training</option>
+                    <option value="dogsittingservices"
+                      >Dog Sitting Services</option
+                    >
+                    <option value="other">Other</option>
+                  </select>
+                </label>
+              </p>
+              <p>
+                <span class="margin-bottom-1"
+                  >Did you get the help you needed with your dog?</span
+                >
+
+                <label>
+                  <input type="radio" name="raiting" value="yes" />
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="raiting" value="no" />
+                  No
+                </label>
+                <label>
+                  <input type="radio" name="raiting" value="Other" />
+                  Other
+                </label>
+              </p>
+              <p>
+                <label for="review">
+                  Write here:
+                </label>
+                <textarea rows="10" id="review"> </textarea>
+              </p>
+              <p>
+                <label class="margin-bottom-1" for="avatar"
+                  >Upload a picture of your dog:
+                </label>
+                <input
+                  type="file"
+                  id="avatar"
+                  name="avatar"
+                  accept="image/png,image/jpeg"
+                />
+                <br />
+                <button class="submit-button">SEND</button>
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="book-recommendation flex flex-col">
+          <img src="img/followMe2.jpg" alt="" />
+          <h4>
+            If you read no other dog book, at least read this one! Highly
+            recommended by DogBasics
+          </h4>
+        </div>
+        <div class="social">
+          <h4>Follow us on:</h4>
+          <div class="social-icons">
+            <span style="font-size: 3em;">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span style="font-size: 3em; ">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span style="font-size: 3em; ">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Wave image that transitions to the footer -->
+    <div class="wave">
+      <img src="img/wave.svg" alt="" />
+    </div>
+
+    <footer class="flex flex-col">
+      <div id="contact" class="contact-info ">
+        <h2>Contact</h2>
+        <p>
+          To find out more about our training and/or dog sitting services,
+          please email me and leave some basic details about your self (your
+          name, email address, phone/mobile number, address) and your dog (name,
+          breed, age).
+        </p>
+        <p>We look forward to hearing from you!</p>
+        <p>Caroline Kjall Jackson</p>
+        <p>
+          Email:
+          <span class="email underline-effect">info@dogbasics.co.uk</span>
+        </p>
+        <p>Adress: Ovington, Norfolk, IP25</p>
+      </div>
+      <iframe
+        class="googlemaps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d326721.86083802104!2d0.6578405490947411!3d52.668157270503066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9d397fb3843c9%3A0x50e1ca8bbc21370!2sOvington%2C%20Norfolk%2C%20Thetford%2C%20Storbritannien!5e0!3m2!1ssv!2sse!4v1569840923042!5m2!1ssv!2sse"
+        width="270"
+        height="200"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+      ></iframe>
+    </footer>
+  </body>
+</html>

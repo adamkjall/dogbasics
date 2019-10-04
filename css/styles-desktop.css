@@ -1,0 +1,58 @@
+@media only screen and (min-width: 992px) {
+  main {
+    grid-template-areas: "page sidebar";
+    grid-template-columns: auto max-content;
+    justify-content: center;
+  }
+
+  .sidebar {
+    grid-template-areas:
+      "book-recommendation"
+      "social";
+    grid-template-rows: max-content;
+  }
+
+  .social-icons {
+    display: grid;
+    justify-items: center;
+  }
+}
+
+/* Breakpoint to show navbar */
+@media only screen and (min-width: 1055px) {
+  /* Show navbar and hide hamburger icon */
+  .navbar {
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #menuToggle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .brand img {
+    width: 15rem;
+  }
+
+  .img-slide {
+    height: 20rem;
+  }
+
+  .sidebar {
+    margin-left: 3rem;
+  }
+
+  .googlemaps {
+    width: 26rem;
+    height: 19rem
+  }
+}

@@ -1,0 +1,68 @@
+/* MEDIUM SCREEN */
+@media only screen and (min-width: 768px) {
+
+  /* HEADER */
+  .navbar-container {
+    grid-template-areas: "brand navbar search";
+  }
+  
+  .brand img {
+    width: 13rem;
+  }
+  
+  /* MAIN */
+  main {
+    grid-template-areas: "page" "sidebar";
+  }
+  
+  
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box3";
+    padding-left: 2rem;
+  }
+
+  .content {
+    padding-right: 2rem;
+  }
+
+  .box {
+    height: 14rem;
+  }
+  .box1 {
+    height: 20rem;
+  }
+
+  .article p {
+    padding: 0 2rem;
+  }
+
+  .sidebar {
+    grid-template-areas: "book-recommendation social";
+    grid-gap: 5rem;
+    padding: 0 2rem;
+    margin-top: 5rem;
+  }
+
+  .sidebar .book-recommendation {
+    align-items: center;
+    justify-content: flex-start;
+    width: 10rem;
+  }
+
+  footer {
+    flex-direction: row !important;
+  }
+
+  .contact-info {
+    margin-right: 4rem;
+  }
+
+  .googlemaps {
+    width: 22rem;
+    height: 16rem
+  }
+}

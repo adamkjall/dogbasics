@@ -1,0 +1,6 @@
+Inlämningsuppgift 2 - modernisera en hemsida
+Av Emma Andersson och Adam Kjäll
+DogBasics: (http://www.dogbasics.co.uk/index.html)
+
+Vi har valt att modernisera en hundtränares hemsida som har omodern design och layout. Valet av hemsida kändes kul och utmanande.
+Avgränsningar vi valt att göra är att inte ha med vissa bilder, en del meny alternativ och information.
