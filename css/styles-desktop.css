@@ -1,0 +1,20 @@
+/* LARGE SCREEN */
+@media only screen and (min-width: 1150px) {
+  /* Show navbar and hide hamburger icon */
+  .navbar {
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  #menuToggle {
+    display: none;
+  }
+}
+

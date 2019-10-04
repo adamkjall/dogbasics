@@ -1,0 +1,71 @@
+
+/* MEDIUM SCREEN */
+@media only screen and (min-width: 768px) {
+  main {
+    /* grid-template-columns: 4fr 1fr; */
+    grid-template-areas: "page" "sidebar";
+    justify-items: end;
+  }
+
+  .navbar-container {
+    grid-template-areas: "brand navbar search"
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box3";
+    padding-left: 2rem;
+  }
+
+  .content {
+    padding-right: 2rem;
+  }
+
+  .box {
+    height: 14rem;
+  }
+  .box1 {
+    height: 28rem;
+  }
+
+  .article p {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .sidebar {
+    grid-template-areas:
+      "book-recommendation"
+      "social";
+    grid-template-columns: 1fr;
+    grid-template-rows: 25rem auto;
+    justify-self: start;
+    padding: 0 2rem;
+    margin-top: 1rem;
+  }
+
+  .sidebar .book-recommendation {
+    align-items: center;
+    justify-content: flex-start;
+    width: 10rem;
+  }
+
+  .sidebar .social {
+    align-items: center;
+    padding: 0;
+  }
+
+  .sidebar .social img ~ img {
+    margin-top: 1rem;
+  }
+
+  footer {
+    flex-direction: row !important; /* Fråga!! */ 
+  }
+
+  .contact-info {
+    margin-right: 4rem;
+  }
+}

@@ -9,7 +9,7 @@
  * prefixes.
  */
 
-#menu a {
+ #menu a {
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
@@ -20,6 +20,8 @@
 }
 
 #menuToggle {
+  grid-area: menuToggle;
+
   display: block;
   position: relative;
 
@@ -106,8 +108,8 @@
 #menu {
   position: absolute;
   width: 300px;
-  height: 100vh;
-  margin: -100px 0 0 -250px;
+  height: auto;
+  margin: -100px 0 0 -225px;
   padding: 50px;
   padding-top: 125px;
 
@@ -132,12 +134,4 @@
   */
 #menuToggle input:checked ~ ul {
   transform: none;
-}
-
-@media only screen and (min-width: 1150px) {
- 
-
-  #menuToggle {
-    display: none;
-  }
 }

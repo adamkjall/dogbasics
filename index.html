@@ -5,31 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DogBasics</title>
+
+    <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <!--  STYLES -->
     <link rel="stylesheet" href="css/drawer-menu-styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles-tablet.css" />
+    <link rel="stylesheet" href="css/styles-desktop.css" />
+
+    <!--  ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
-      <div class="navbar-container">
+      <div style="width: 100%" class="navbar-container">
         <div class="brand">
           <img src="img/logo/DogBasics-logo/cover.png" alt="" />
         </div>
 
         <nav>
           <ul class="navbar">
-            <li>Home</li>
-            <li>Dog Training ▾</li>
-            <li>Advice ▾</li>
-            <li>Dog Sitting Services ▾</li>
-            <li><a href="review.html">Testimonials</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <span>Dog Training ▾</span>
+              <ul class="dropdown-menu">
+                <li class="underline-effect">
+                  <a href="#">Training at DogBasics</a>
+                </li>
+                <li class="underline-effect"><a href="#">For Puppies</a></li>
+                <li class="underline-effect">
+                  <a href="#">Basic Obedience</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Advanced Obedience</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Private Training</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Other Types of Training</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">First Aid Lesson</a>
+                </li>
+                <li class="underline-effect"><a href="#">Class Schedule</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <span>Advice ▾</span>
+              <ul class="dropdown-menu">
+                <li class="underline-effect">
+                  <a href="#">General Dog Advice</a>
+                </li>
+                <li class="underline-effect"><a href="#">For Puppies</a></li>
+                <li class="underline-effect">
+                  <a href="#">About Puppies</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Puppy Nipping</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Dog Food and Behaviour</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Food Guarding</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Dog Language</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Do We Need to Dominate our Dogs</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Seperation Anxiety</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Travel Sickness</a>
+                </li>
+                <li class="underline-effect"><a href="#">Noise Phobias</a></li>
+                <li class="underline-effect">
+                  <a href="#">Over Excited Dogs</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Dogs That Chase</a>
+                </li>
+                <li class="underline-effect">
+                  <a href="#">Basic Exercises</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <span>Dog Sitting Services ▾</span>
+              <ul class="dropdown-menu">
+                <li class="underline-effect">
+                  <a href="#">Home Boarding</a>
+                </li>
+                <li class="underline-effect"><a href="#">Dog Day Care</a></li>
+                <li class="underline-effect">
+                  <a href="#">Dog Sitting Fees</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <!--
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li class="underline-effect">Home</li></a>
+              <a href="#"><li class="underline-effect">Dog Training ▾</li></a>
+              <a href="#"><li class="underline-effect">Advice ▾</li></a>
+              <a href="#"
+                ><li class="underline-effect">Dog Sitting Services ▾</li></a
+              >
+              <a href="testimonials.html"
+                ><li class="underline-effect">Testimonials</li></a
+              >
+              <a href="#contact"><li class="underline-effect">Contact</li></a>
+            </ul>
+          </div>
+        </nav>
+        -->
 
         <div class="hamburger-menu">
           <img src="img/menu.png" alt="" />
@@ -38,33 +152,44 @@
           <img src="img/search.png" alt="search" />
         </div>
       </div>
-      <img
+      <!-- <img
         class="cover-img"
-        src="img/cover-img.jpg"
-        style="width:100%;"
+        src="img/cover/cover1.jpg"
+        style="width:100%; height:315px; object-fit: cover;"
         alt=""
-      />
+      /> -->
+      <div class="img-slide"></div>
     </header>
 
     <main>
-      <div class="page" style="margin-top: 0px;">
+      <div class="page">
         <section class="content">
           <div class="grid-container">
             <div class="box box1 flex flex-col">
-              <h2>Dog Training</h2>
-              <p>
-                DogBasics is a dog training school in Ovington, Thetford,
-                Norfolk, UK. We offer Basic and Intermediate Obedience lessons.
-              </p>
-              <a class="button" href="#article-1">Learn more</a>
+              <img src="../img/dog-clicker-training.jpg" alt="" />
+              <div class="center">
+                <h2>Dog Training</h2>
+                <p>
+                  DogBasics is a dog training school in Ovington, Thetford,
+                  Norfolk, UK. We offer Basic and Intermediate Obedience
+                  lessons.
+                </p>
+                <a class="button" href="#article-1">Learn more</a>
+              </div>
             </div>
             <div class="box box2 flex flex-col">
-              <h2>Dog day care & boarding</h2>
-              <a class="button" href="#article-2">Learn more</a>
+              <img src="../img/dog-bed.jpg" alt="" />
+              <div class="center">
+                <h2>Dog day care & boarding</h2>
+                <a class="button" href="#article-2">Learn more</a>
+              </div>
             </div>
             <div class="box box3 flex flex-col">
-              <h2>Advice</h2>
-              <a class="button" href="#article-3">Learn more</a>
+              <img src="../img/advice.jpg" alt="" />
+              <div class="center">
+                <h2>Advice</h2>
+                <a class="button" href="#article-3">Learn more</a>
+              </div>
             </div>
           </div>
 
@@ -115,30 +240,87 @@
             </article>
           </section>
         </section>
+
+        <section class="cards">
+          <article class="card">
+            <img src="img/thumbnails/dog1.png" alt="" />
+            <h4>January 2014</h4>
+            <p>
+              “Caroline has to be the Angel of Dogs. With extensive knowledge,
+              and a historical background in everything doggie - including
+              training, first aid, understanding different breeds and their
+              personalities, she is an expert in her field. Only downside is, my
+              dog loves her so much, she wants to stay there..... Dorothy ”
+              Millie Lab from Suffolk, came for training lessons and dog
+              boarding
+            </p>
+          </article>
+          <article class="card">
+            <img src="img/thumbnails/dog2.jpg" alt="" />
+            <h4>January 2014</h4>
+            <p>
+              “Caroline has to be the Angel of Dogs. With extensive knowledge,
+              and a historical background in everything doggie - including
+              training, first aid, understanding different breeds and their
+              personalities, she is an expert in her field. Only downside is, my
+              dog loves her so much, she wants to stay there..... Dorothy ”
+              Millie Lab from Suffolk, came for training lessons and dog
+              boarding
+            </p>
+          </article>
+          <article class="card">
+            <img src="img/thumbnails/dog3.jpg" alt="" />
+            <h4>January 2014</h4>
+            <p>
+              “Caroline has to be the Angel of Dogs. With extensive knowledge,
+              and a historical background in everything doggie - including
+              training, first aid, understanding different breeds and their
+              personalities, she is an expert in her field. Only downside is, my
+              dog loves her so much, she wants to stay there..... Dorothy ”
+              Millie Lab from Suffolk, came for training lessons and dog
+              boarding
+            </p>
+          </article>
+        </section>
       </div>
 
       <aside class="sidebar">
-        <div class="book-recommendation">
+        <div class="book-recommendation flex flex-col">
           <img src="img/followMe2.jpg" alt="" />
           <h4>
-            If you read no other dog book, at least read this one! Highly
-            recommended by DogBasics
+            "If you read no other dog book, at least read this one!" <br/>
+            -DogBasics
           </h4>
         </div>
         <div class="social">
           <h4>Follow us on:</h4>
-          <img src="img/icons/facebook.png" alt="" />
-          <img src="img/icons/twitter.png" alt="" />
-          <img src="img/icons/instagram.png" alt="" />
+          <div class="social-icons">
+            <span style="font-size: 3em;">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span style="font-size: 3em; ">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span style="font-size: 3em; ">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </div>
         </div>
       </aside>
       '
     </main>
 
     <!-- Wave image that transitions to the footer -->
-    <img class="wave" src="img/wave.svg" alt=""">
+    <div class="wave">
+      <img
+        src="img/wave.svg"
+        alt=""
+        style="background-size: cover; min-width: 20rem;"
+      />
+    </div>
+
     <footer class="flex flex-col">
-      <div id="contact" class="contact-info">
+      <div id="contact" class="contact-info ">
         <h2>Contact</h2>
         <p>
           To find out more about our training and/or dog sitting services,
@@ -157,8 +339,8 @@
       <iframe
         class="googlemaps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d326721.86083802104!2d0.6578405490947411!3d52.668157270503066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9d397fb3843c9%3A0x50e1ca8bbc21370!2sOvington%2C%20Norfolk%2C%20Thetford%2C%20Storbritannien!5e0!3m2!1ssv!2sse!4v1569840923042!5m2!1ssv!2sse"
-        width="420"
-        height="315"
+        width="270"
+        height="200"
         frameborder="0"
         style="border:0;"
         allowfullscreen=""
