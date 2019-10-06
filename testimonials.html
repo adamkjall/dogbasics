@@ -156,6 +156,8 @@
         </div>
       </div>
 
+        <!-- Load the images that are used by the image gallery slide -->
+        <div class="img-slide-load"></div> 
       <!-- Cover image gallery -->
       <div class="img-slide"></div>
     </header>
@@ -316,72 +318,72 @@
               </p>
             </article>
           </section>
-          <form class="form" method="get">
-            <div class="form-wrapper">
-              <h2>Leave a testimonial!</h2>
-
-              <legend>Your Details:</legend>
-              <label>
-                Name:
-                <input
-                  class="margin-bottom-1"
-                  type="text"
-                  name="name"
-                  style="width: 100%"
-                />
-              </label>
-
-              <p>
-                <label class="margin-bottom-1" for="hear about">
-                  What contact did you have with DogBasics?
-                  <select name="referrer" id="hear-about">
-                    <option value="dogtraining">Dog Training</option>
-                    <option value="dogsittingservices"
-                      >Dog Sitting Services</option
+          <div class="form-wrapper">
+              <form class="form" method="get">
+                  <h2>Leave a testimonial!</h2>
+    
+                  <legend>Your Details:</legend>
+                  <label>
+                    Name:
+                    <input
+                      class="margin-bottom-1"
+                      type="text"
+                      name="name"
+                      style="width: 100%"
+                    />
+                  </label>
+    
+                  <p>
+                    <label class="margin-bottom-1" for="hear about">
+                      What contact did you have with DogBasics?
+                      <select name="referrer" id="hear-about">
+                        <option value="dogtraining">Dog Training</option>
+                        <option value="dogsittingservices"
+                          >Dog Sitting Services</option
+                        >
+                        <option value="other">Other</option>
+                      </select>
+                    </label>
+                  </p>
+                  <p>
+                    <span class="margin-bottom-1"
+                      >Did you get the help you needed with your dog?</span
                     >
-                    <option value="other">Other</option>
-                  </select>
-                </label>
-              </p>
-              <p>
-                <span class="margin-bottom-1"
-                  >Did you get the help you needed with your dog?</span
-                >
-
-                <label>
-                  <input type="radio" name="raiting" value="yes" />
-                  Yes
-                </label>
-                <label>
-                  <input type="radio" name="raiting" value="no" />
-                  No
-                </label>
-                <label>
-                  <input type="radio" name="raiting" value="Other" />
-                  Other
-                </label>
-              </p>
-              <p>
-                <label for="review">
-                  Write here:
-                </label>
-                <textarea rows="6" id="review""> </textarea>
-              </p>
-              <p>
-                <label class="margin-bottom-1" for="avatar"
-                  >Upload a picture of your dog:
-                </label>
-                <input
-                  type="file"
-                  id="avatar"
-                  name="avatar"
-                  accept="image/png,image/jpeg"
-                />
-                <br />
-                <button class="submit-button">SEND</button>
-              </p>
-            </div>
-          </form>
+    
+                    <label>
+                      <input type="radio" name="raiting" value="yes" />
+                      Yes
+                    </label>
+                    <label>
+                      <input type="radio" name="raiting" value="no" />
+                      No
+                    </label>
+                    <label>
+                      <input type="radio" name="raiting" value="Other" />
+                      Other
+                    </label>
+                  </p>
+                  <p>
+                    <label for="review">
+                      Write here:
+                    </label>
+                    <textarea rows="6" id="review""> </textarea>
+                  </p>
+                  <p>
+                    <label class="margin-bottom-1" for="avatar"
+                      >Upload a picture of your dog:
+                    </label>
+                    <input
+                      type="file"
+                      id="avatar"
+                      name="avatar"
+                      accept="image/png,image/jpeg"
+                    />
+                    <br />
+                  </p>
+                  <button class="submit-button">SEND</button>
+                </form>
+              </div>
         </section>
       </div>
 

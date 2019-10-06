@@ -287,6 +287,9 @@ main {
 /* Border that separates the main content and the sidebar */
 .content {
   border-right: 1px solid rgb(168, 168, 168);
+
+ display: grid;
+ justify-items: center;
 }
 
 /* Grid with information boxes */
